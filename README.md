@@ -1,1 +1,1 @@
-# panorama-maker
+The goal of this project is to make a panorama image from the array of consecutive images. This is achieved using DoG features. After detection, points that represent uniform region or edges are dismissed and only ones left are corners. These features are then described using BRIEF descriptor. This descriptor is then used to match same points on different images. RANSAC algoirthm is used to calculate transformation between matched points. Every image in array is then transformed according to central image and finally they are stitched together.
